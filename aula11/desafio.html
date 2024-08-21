@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+
+      header {
+        font: bold 2pc calibri;
+        color: white;
+        background-color: rgb(32, 100, 112);
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+      }
+      div#texto {
+        font: normal 20px calibri;
+        margin-left: 10px;
+        color: #000;
+      }
+
+      input#pais {
+        font: normal 15px calibri;
+        background-color: rgb(202, 228, 220);
+        margin-left: 10px;
+        border-style: inherit;
+        height: 20px;
+      }
+
+      div#resp{
+        font: bold 20px calibri;
+        margin-left: 10px;
+        color: #000;
+      }
+      
+      input#btn {
+        margin-left: 10px;
+        font: normal 15px calibri;
+        height: 40px;
+        width: 80px;
+        text-align: center;
+        border-radius: 15%;
+        border-color: antiquewhite;
+      }
+
+      div#resp {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Nacionalidade</header>
+    <div id="texto">Digite o nome do seu país:<input type="text" id="pais"/><input type="button" id="btn"  value="Verificar" onclick="clicar()"/></div>
+    <div id="resp"> </div>
+    
+
+    <script>
+
+
+      function clicar(){
+        var nac = window.document.getElementById("pais")
+        var nacionalidade = nac.value
+        var nac2 = 'BRASIL'
+        var res = window.document.getElementById("resp")
+        if (nacionalidade == nac2){
+          res.innerText = 'Você é Brasileiro'
+          res.style.color = 'green'
+        } else {
+          res.innerText = 'Você é estrangeiro'
+          res.style.color = 'grey'
+        }
+      }
+      
+    </script>
+  </body>
+</html>

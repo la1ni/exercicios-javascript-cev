@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(86, 53, 121);
+  font: normal 15px arial;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  padding-block: 25px;
+  padding-inline: 35px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.564);
+}
+
+#dados {
+  display: flex;
+  margin-bottom: 15px;
+  margin-right: 180px;
+  justify-content: space-between;
+}
+
+#num{
+    width: 50px;
+    border-radius: 5px;
+    border-width: 2px;
+
+}
+
+.btn {
+background-color: rgb(104, 84, 126);
+color: white;
+border-radius: 10px;
+border-style: inherit;
+width: 80px;
+height: 25px;
+}
+
+#sel {
+  width: 160px;
+  overflow-y: auto;
+  justify-content: left;
+}
+
+#res {
+    margin-top: 25px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}

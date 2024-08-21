@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(149, 235, 205);
+  font: normal 15px arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding-block: 15px;
+    padding-inline: 30px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.564);
+}
+
+#numInput{
+    margin: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 40px;
+}
+
+#btn{
+    border-radius: 5px;
+    border-width: 1px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(184, 222, 160, 0.747);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.564);
+
+}
+ #sel {
+    padding: 10px;
+    width: 110px;
+    text-align: left;
+    overflow-y: auto;
+    border-radius: 6px;
+    
+ }
+
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+    * {
+        margin: 0px;
+    }
+        header{
+            font: normal 4pc calibri;
+            background-color: rgb(135, 199, 199);
+            color: white;
+            margin-bottom: 15px;
+            padding-left: 15px;
+        }
+      input#veltxt {
+        font: normal 1pc calibri;
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+        border-radius: 15%;
+        text-align: center;
+
+      }
+      div#txt{
+        font: normal 1pc calibri;
+        margin-left: 15px;
+      }
+      input#btn{
+        font: normal 1pc calibri;
+        height: 30px;
+        width: 80px;
+        margin: 10px;
+        background-color: rgb(58, 168, 227);
+        color: white;
+        border-radius: 15%;
+        border-style: inherit;
+      }
+      div#resp {
+        font: normal 1pc calibri;
+        height: 30px;
+        width: 200px;
+        margin-left: 130px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><strong>Sistema de multas</strong></header>
+    <div id="txt">Velocidade do carro:
+      <input type="number" id="veltxt" />Km/h
+      <input type="button" id="btn" onclick="clicar()" value="Verificar">
+    </div> 
+    <div id = "resp">
+    </div>
+    <script>
+      function clicar(){
+        var resp = window.document.getElementById("resp")
+        var textovel = window.document.getElementById("veltxt")
+        var numvel = Number(textovel.value)
+        if (numvel > 60){
+          resp.innerText = 'MULTADO'
+          resp.style.color = 'red'
+        } else {
+          resp.innerText = 'Velocidade ok'
+          resp.style.color = 'green'
+        }
+      }
+    </script>
+  </body>
+</html>

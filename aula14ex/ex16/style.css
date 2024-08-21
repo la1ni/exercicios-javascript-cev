@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(149, 235, 205);
+  font: normal 15px arial;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  padding-block: 15px;
+  padding-inline: 30px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.564);
+}
+
+div#inputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 265px;
+  text-align: right;
+}
+
+.inputlines {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  color: white;
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
